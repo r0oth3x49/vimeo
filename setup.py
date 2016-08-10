@@ -19,7 +19,7 @@ setup(
     author="Nasir khan (r0ot h3x49)",
     author_email="r0ot@h3x49@gmail.com",
     url = "https://github.com/r0oth3x49/vimeo",
-    download_url="https://github.com/r0oth3x49/vimeo/tarball/1.0",
+    download_url="https://github.com/r0oth3x49/vimeo/tarball/master",
     package_data={"": ["LICENSE","README.rst", "AUTHOR"]},
     include_package_data=True,
     license='LGPLv3',
