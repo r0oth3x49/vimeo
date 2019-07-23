@@ -39,14 +39,14 @@ def _extract_json(url):
             "height"        : json[0]['height'],
             "width"         : json[0]['width'],
             "upload_date"   : json[0]['upload_date'],
-            "likes"         : json[0]['stats_number_of_likes'],
-            "comments"      : json[0]['stats_number_of_comments'],
+            "likes"         : json[0].get('stats_number_of_likes', -1),
+            "comments"      : json[0].get('stats_number_of_comments', -1),
             "user_url"      : json[0]['user_url'],
             "video_id"      : json[0]['id'],
             "duration"      : json[0]['duration'],
             "user_id"       : json[0]['user_id'],
             "url"           : json[0]['url'],
-            "viewed"        : json[0]['stats_number_of_plays'],
+            "viewed"        : json[0].get('stats_number_of_plays', -1),
             }
         return json_info
 
